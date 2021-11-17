@@ -14,13 +14,13 @@
   <link name="base_link">
     <visual>
       <geometry>
-        <box size="0.6 0.5 0.1"/>
+        <box size="0.4231 0.25158 0.0515"/>
       </geometry>
       <material name="white" />
     </visual>
     <collision>
       <geometry>
-        <box size="0.6 0.5 0.1"/>
+        <box size="0.4231 0.25158 0.0515"/>
       </geometry>
     </collision>
   </link>
@@ -33,13 +33,13 @@
   <link name="base_batteries">
     <visual>
       <geometry>
-        <box size="0.5 0.1 0.15"/>
+        <box size="0.3031 0.065 0.0939"/>
       </geometry>
       <material name="blue"/>
     </visual>
     <collision>
       <geometry>
-        <box size="0.5 0.1 0.15"/>
+        <box size="0.3031 0.065 0.0939"/>
       </geometry>
     </collision>
   </link>
@@ -52,20 +52,20 @@
   <link name="base_wifi">
     <visual>
       <geometry>
-        <box size="0.03 0.25 0.15"/>
+        <box size="0.0275 0.1857 0.1202"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
       <geometry>
-        <box size="0.03 0.25 0.15"/>
+        <box size="0.0275 0.1857 0.1202"/>
       </geometry>
     </collision>
   </link>
   <joint name="base_to_wifi" type="fixed">
     <parent link="base_link"/>
     <child link="base_wifi"/>
-    <origin xyz="-0.3 0 0"/>
+    <origin xyz="-0.2253 0 0"/>
   </joint>
 
   <!-- 1. Rueda y motor delantero izquierdo-->
@@ -73,35 +73,35 @@
     <visual>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.05" radius="0.03"/>
+        <cylinder length="0.0439" radius="0.023"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.05" radius="0.03"/>
+        <cylinder length="0.0439" radius="0.023"/>
       </geometry>
     </collision>
   </link>
   <joint name="left_front_motor_joint" type="fixed">
     <parent link="base_link"/>
     <child link="left_front_motor"/>
-    <origin rpy="0 0 0" xyz="0.27 0.275 0"/>
+    <origin rpy="0 0 0" xyz="0.18855 0.12579 0"/>
   </joint>
 
   <link name="left_front_wheel">
     <visual>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.1" radius="0.17"/>
+        <cylinder length="0.077" radius="0.1295"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.1" radius="0.17"/>
+        <cylinder length="0.077" radius="0.1295"/>
       </geometry>
     </collision>
   </link>
@@ -109,7 +109,7 @@
     <parent link="left_front_motor"/>
     <child link="left_front_wheel"/>
     <axis xyz="0 1 0"/>
-    <origin rpy="0 0 0" xyz="0.0 0.075 0"/>
+    <origin rpy="0 0 0" xyz="0.0 0.06045 0"/>
   </joint>
 
   <!-- 2. Rueda y motor delantero derecho-->
@@ -117,35 +117,35 @@
     <visual>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.05" radius="0.03"/>
+        <cylinder length="0.0439" radius="0.023"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.05" radius="0.03"/>
+        <cylinder length="0.0439" radius="0.023"/>
       </geometry>
     </collision>
   </link>
   <joint name="right_front_motor_joint" type="fixed">
     <parent link="base_link"/>
     <child link="right_front_motor"/>
-    <origin rpy="0 0 0" xyz="0.27 -0.275 0"/>
+    <origin rpy="0 0 0" xyz="0.18855 -0.12579 0"/>
   </joint>
 
   <link name="right_front_wheel">
     <visual>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.1" radius="0.17"/>
+        <cylinder length="0.077" radius="0.1295"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.1" radius="0.17"/>
+        <cylinder length="0.077" radius="0.1295"/>
       </geometry>
     </collision>
   </link>
@@ -153,7 +153,7 @@
     <parent link="right_front_motor"/>
     <child link="right_front_wheel"/>
     <axis xyz="0 1 0"/>
-    <origin rpy="0 0 0" xyz="0.0 -0.075 0"/>
+    <origin rpy="0 0 0" xyz="0.0 -0.06045 0"/>
   </joint>
 
 
@@ -162,35 +162,35 @@
     <visual>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.05" radius="0.03"/>
+        <cylinder length="0.0439" radius="0.023"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.05" radius="0.03"/>
+        <cylinder length="0.0439" radius="0.023"/>
       </geometry>
     </collision>
   </link>
   <joint name="left_back_motor_joint" type="fixed">
     <parent link="base_link"/>
     <child link="left_back_motor"/>
-    <origin rpy="0 0 0" xyz="-0.27 0.275 0"/>
+    <origin rpy="0 0 0" xyz="-0.18855 0.12579 0"/>
   </joint>
 
   <link name="left_back_wheel">
     <visual>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.1" radius="0.17"/>
+        <cylinder length="0.077" radius="0.1295"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.1" radius="0.17"/>
+        <cylinder length="0.077" radius="0.1295"/>
       </geometry>
     </collision>
   </link>
@@ -198,7 +198,7 @@
     <parent link="left_back_motor"/>
     <child link="left_back_wheel"/>
     <axis xyz="0 1 0"/>
-    <origin rpy="0 0 0" xyz="0.0 0.075 0"/>
+    <origin rpy="0 0 0" xyz="0.0 0.06045 0"/>
   </joint>
 
   <!-- 4. Rueda y motor trasero derecho-->
@@ -206,35 +206,35 @@
     <visual>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.05" radius="0.03"/>
+        <cylinder length="0.0439" radius="0.023"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.05" radius="0.03"/>
+        <cylinder length="0.0439" radius="0.023"/>
       </geometry>
     </collision>
   </link>
   <joint name="right_back_motor_joint" type="fixed">
     <parent link="base_link"/>
     <child link="right_back_motor"/>
-    <origin rpy="0 0 0" xyz="-0.27 -0.275 0"/>
+    <origin rpy="0 0 0" xyz="-0.18855 -0.12579 0"/>
   </joint>
 
   <link name="right_back_wheel">
     <visual>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.1" radius="0.17"/>
+        <cylinder length="0.077" radius="0.1295"/>
       </geometry>
       <material name="black"/>
     </visual>
     <collision>
       <origin rpy="1.57075 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.1" radius="0.17"/>
+        <cylinder length="0.077" radius="0.1295"/>
       </geometry>
     </collision>
   </link>
@@ -242,6 +242,6 @@
     <parent link="right_back_motor"/>
     <child link="right_back_wheel"/>
     <axis xyz="0 1 0"/>
-    <origin rpy="0 0 0" xyz="0.0 -0.075 0"/>
+    <origin rpy="0 0 0" xyz="0.0 -0.06045 0"/>
   </joint>
 </robot>
